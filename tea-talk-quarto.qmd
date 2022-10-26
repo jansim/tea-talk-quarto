@@ -1,0 +1,197 @@
+---
+title: "What is Quarto?"
+subtitle: "A Quick Intro"
+author: "Jan Simson"
+format:
+  revealjs
+
+---
+
+# **Question:** <br> What is Quarto?
+
+# **(easy) Answer:** <br> Rmarkdown 2.0
+
+------------------------------------------------------------------------
+
+![](./figures/rmarkdown.png)
+
+------------------------------------------------------------------------
+
+![](./figures/quarto.png)
+
+------------------------------------------------------------------------
+
+## What does a document look like? {auto-animate="true"}
+<!-- The triple-backticks have a zero-width-space in between the second and third backtick -->
+
+```{.markdown code-line-numbers="|2-3|1,4|6-9|11-13"}
+---
+title: "What is Quarto?"
+format: pdf
+---
+
+## Quarto
+
+Quarto enables you to weave together prose and
+executable code into one document.
+
+``​`{r}
+1 + 1
+``​`
+```
+
+## What does a document look like? {auto-animate="true"}
+
+```{.markdown code-line-numbers="12-20|13-14|10|"}
+---
+title: "What is Quarto?"
+format: pdf
+---
+
+## Quarto
+
+Quarto enables you to weave together prose and
+executable code into one document.
+Just look at @fig-penguins!
+
+``​`{r}
+#| label: fig-penguins
+#| fig-cap: A plot about penguins.
+library(ggplot2)
+ggplot(
+  data = palmerpenguins::penguins |> na.omit(),
+  aes(x = bill_length_mm, y = bill_depth_mm, color = species)
+) + geom_point()
+``​`
+```
+
+## The Rendered Output
+
+![](./figures/example-penguins.png)
+
+## What can you create?
+
+::: {.incremental}
+
+- Academic Articles
+  - With different templates
+- Presentations
+  - Such as this one 👀
+- Websites / Blogs
+- Books
+  - e.g. R for Data Science
+- Interactive Documents
+
+:::
+
+## Interactive Documents
+
+## Interactive Documents
+
+- e.g. `htmlwidgets`
+
+```{r}
+library(leaflet)
+leaflet() |>
+  addTiles() |>  # Add default OpenStreetMap map tiles
+  addMarkers(lat=48.15209339343712, lng=11.58174964647465, popup="Us!")
+```
+
+## Interactive Documents
+
+- e.g. `htmlwidgets`
+
+```{.r}
+library(leaflet)
+leaflet() |>
+  addTiles() |>  # Add default OpenStreetMap map tiles
+  addMarkers(
+    lat=48.15209339343712,
+    lng=11.58174964647465,
+    popup="Us!"
+  )
+```
+
+## Interactive Documents
+
+- e.g. `htmlwidgets`
+- observable JS
+
+## observable JS
+
+```{ojs}
+//| panel: input
+viewof bill_length_min = Inputs.range(
+  [32, 50],
+  {value: 35, step: 1, label: "Bill length (min):"}
+)
+viewof islands = Inputs.checkbox(
+  ["Torgersen", "Biscoe", "Dream"],
+  { value: ["Torgersen", "Biscoe"],
+    label: "Islands:"
+  }
+)
+```
+
+```{ojs}
+Plot.rectY(filtered,
+  Plot.binX(
+    {y: "count"},
+    {x: "body_mass_g", fill: "species", thresholds: 20}
+  ))
+  .plot({
+    facet: {
+      data: filtered,
+      x: "sex",
+      y: "species",
+      marginRight: 80
+    },
+    marks: [
+      Plot.frame(),
+    ]
+  }
+)
+```
+
+```{ojs}
+data = FileAttachment("palmer-penguins.csv").csv({ typed: true })
+```
+
+```{ojs}
+filtered = data.filter(function(penguin) {
+  return bill_length_min < penguin.bill_length_mm &&
+         islands.includes(penguin.island);
+})
+```
+
+
+## Interactive Documents
+
+- e.g. `htmlwidgets`
+- observable JS
+- `shiny` applications
+
+## How can you use it?
+
+::: {.incremental}
+
+- Rstudio
+- VSCode
+- Command Line
+- (JupyterLab)
+- Standalone Editor (in the future)
+
+:::
+
+## Sources
+
+- Inspiration for graphics at start: https://occasionaldivergences.com/posts/quarto-questions/
+- Observable Notebook Example: https://quarto.org/docs/interactive/ojs/examples/penguins.html
+- https://quarto.org/
+
+## Further Reading
+
+- https://quarto.org/
+- https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/
+- https://occasionaldivergences.com/posts/quarto-questions/
+

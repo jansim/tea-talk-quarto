@@ -1,0 +1,20 @@
+---
+title: "What is Quarto?"
+format: pdf
+---
+
+## Quarto
+
+Quarto enables you to weave together prose and
+executable code into one document.
+Just look at @fig-penguins!
+
+```{r}
+#| label: fig-penguins
+#| fig-cap: A plot about penguins.
+library(ggplot2)
+ggplot(
+  data = palmerpenguins::penguins |> na.omit(),
+  aes(x = bill_length_mm, y = bill_depth_mm, color = species)
+) + geom_point()
+```
