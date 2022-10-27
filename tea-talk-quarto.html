@@ -473,6 +473,10 @@ Jan Simson
 <h2>The Rendered Output</h2>
 
 <img data-src="./figures/example-penguins.png" class="r-stretch"></section>
+<section id="the-rendered-output-1" class="slide level2">
+<h2>The Rendered Output</h2>
+
+<img data-src="./figures/example-penguins-acm.png" class="r-stretch"></section>
 <section id="what-can-you-create" class="slide level2">
 <h2>What can you create?</h2>
 <div>
@@ -504,8 +508,8 @@ Jan Simson
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-039041f8e3e2ca882249" style="width:960px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-039041f8e3e2ca882249">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.1520933934371,11.5817496464747,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Us!",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.1520933934371,48.1520933934371],"lng":[11.5817496464747,11.5817496464747]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-acda566cf7f20529eb4f" style="width:960px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-acda566cf7f20529eb4f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.1520933934371,11.5817496464747,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Us!",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.1520933934371,48.1520933934371],"lng":[11.5817496464747,11.5817496464747]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -533,16 +537,16 @@ Jan Simson
 <section id="observable-js" class="slide level2">
 <h2>observable JS</h2>
 <div class="cell panel-input">
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="124" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 123;"><span id="cb4-124"><a href="#cb4-124"></a>viewof bill_length_min <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
-<span id="cb4-125"><a href="#cb4-125"></a>  [<span class="dv">32</span><span class="op">,</span> <span class="dv">50</span>]<span class="op">,</span></span>
-<span id="cb4-126"><a href="#cb4-126"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="dv">35</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Bill length (min):"</span>}</span>
-<span id="cb4-127"><a href="#cb4-127"></a>)</span>
-<span id="cb4-128"><a href="#cb4-128"></a>viewof islands <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
-<span id="cb4-129"><a href="#cb4-129"></a>  [<span class="st">"Torgersen"</span><span class="op">,</span> <span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span>]<span class="op">,</span></span>
-<span id="cb4-130"><a href="#cb4-130"></a>  { <span class="dt">value</span><span class="op">:</span> [<span class="st">"Torgersen"</span><span class="op">,</span> <span class="st">"Biscoe"</span>]<span class="op">,</span></span>
-<span id="cb4-131"><a href="#cb4-131"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Islands:"</span></span>
-<span id="cb4-132"><a href="#cb4-132"></a>  }</span>
-<span id="cb4-133"><a href="#cb4-133"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="128" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 127;"><span id="cb4-128"><a href="#cb4-128"></a>viewof bill_length_min <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
+<span id="cb4-129"><a href="#cb4-129"></a>  [<span class="dv">32</span><span class="op">,</span> <span class="dv">50</span>]<span class="op">,</span></span>
+<span id="cb4-130"><a href="#cb4-130"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="dv">35</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Bill length (min):"</span>}</span>
+<span id="cb4-131"><a href="#cb4-131"></a>)</span>
+<span id="cb4-132"><a href="#cb4-132"></a>viewof islands <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
+<span id="cb4-133"><a href="#cb4-133"></a>  [<span class="st">"Torgersen"</span><span class="op">,</span> <span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span>]<span class="op">,</span></span>
+<span id="cb4-134"><a href="#cb4-134"></a>  { <span class="dt">value</span><span class="op">:</span> [<span class="st">"Torgersen"</span><span class="op">,</span> <span class="st">"Biscoe"</span>]<span class="op">,</span></span>
+<span id="cb4-135"><a href="#cb4-135"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Islands:"</span></span>
+<span id="cb4-136"><a href="#cb4-136"></a>  }</span>
+<span id="cb4-137"><a href="#cb4-137"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -559,23 +563,23 @@ Jan Simson
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="136" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 135;"><span id="cb5-136"><a href="#cb5-136"></a>Plot<span class="op">.</span><span class="fu">rectY</span>(filtered<span class="op">,</span></span>
-<span id="cb5-137"><a href="#cb5-137"></a>  Plot<span class="op">.</span><span class="fu">binX</span>(</span>
-<span id="cb5-138"><a href="#cb5-138"></a>    {<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span></span>
-<span id="cb5-139"><a href="#cb5-139"></a>    {<span class="dt">x</span><span class="op">:</span> <span class="st">"body_mass_g"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span> <span class="dt">thresholds</span><span class="op">:</span> <span class="dv">20</span>}</span>
-<span id="cb5-140"><a href="#cb5-140"></a>  ))</span>
-<span id="cb5-141"><a href="#cb5-141"></a>  <span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb5-142"><a href="#cb5-142"></a>    <span class="dt">facet</span><span class="op">:</span> {</span>
-<span id="cb5-143"><a href="#cb5-143"></a>      <span class="dt">data</span><span class="op">:</span> filtered<span class="op">,</span></span>
-<span id="cb5-144"><a href="#cb5-144"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"sex"</span><span class="op">,</span></span>
-<span id="cb5-145"><a href="#cb5-145"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb5-146"><a href="#cb5-146"></a>      <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">80</span></span>
-<span id="cb5-147"><a href="#cb5-147"></a>    }<span class="op">,</span></span>
-<span id="cb5-148"><a href="#cb5-148"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb5-149"><a href="#cb5-149"></a>      Plot<span class="op">.</span><span class="fu">frame</span>()<span class="op">,</span></span>
-<span id="cb5-150"><a href="#cb5-150"></a>    ]</span>
-<span id="cb5-151"><a href="#cb5-151"></a>  }</span>
-<span id="cb5-152"><a href="#cb5-152"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="140" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 139;"><span id="cb5-140"><a href="#cb5-140"></a>Plot<span class="op">.</span><span class="fu">rectY</span>(filtered<span class="op">,</span></span>
+<span id="cb5-141"><a href="#cb5-141"></a>  Plot<span class="op">.</span><span class="fu">binX</span>(</span>
+<span id="cb5-142"><a href="#cb5-142"></a>    {<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span></span>
+<span id="cb5-143"><a href="#cb5-143"></a>    {<span class="dt">x</span><span class="op">:</span> <span class="st">"body_mass_g"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span> <span class="dt">thresholds</span><span class="op">:</span> <span class="dv">20</span>}</span>
+<span id="cb5-144"><a href="#cb5-144"></a>  ))</span>
+<span id="cb5-145"><a href="#cb5-145"></a>  <span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-146"><a href="#cb5-146"></a>    <span class="dt">facet</span><span class="op">:</span> {</span>
+<span id="cb5-147"><a href="#cb5-147"></a>      <span class="dt">data</span><span class="op">:</span> filtered<span class="op">,</span></span>
+<span id="cb5-148"><a href="#cb5-148"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"sex"</span><span class="op">,</span></span>
+<span id="cb5-149"><a href="#cb5-149"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb5-150"><a href="#cb5-150"></a>      <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">80</span></span>
+<span id="cb5-151"><a href="#cb5-151"></a>    }<span class="op">,</span></span>
+<span id="cb5-152"><a href="#cb5-152"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-153"><a href="#cb5-153"></a>      Plot<span class="op">.</span><span class="fu">frame</span>()<span class="op">,</span></span>
+<span id="cb5-154"><a href="#cb5-154"></a>    ]</span>
+<span id="cb5-155"><a href="#cb5-155"></a>  }</span>
+<span id="cb5-156"><a href="#cb5-156"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
@@ -583,7 +587,7 @@ Jan Simson
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="156" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 155;"><span id="cb6-156"><a href="#cb6-156"></a>data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"palmer-penguins.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="160" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 159;"><span id="cb6-160"><a href="#cb6-160"></a>data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"palmer-penguins.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
 
@@ -591,10 +595,10 @@ Jan Simson
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="160" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 159;"><span id="cb7-160"><a href="#cb7-160"></a>filtered <span class="op">=</span> data<span class="op">.</span><span class="fu">filter</span>(<span class="kw">function</span>(penguin) {</span>
-<span id="cb7-161"><a href="#cb7-161"></a>  <span class="cf">return</span> bill_length_min <span class="op">&lt;</span> penguin<span class="op">.</span><span class="at">bill_length_mm</span> <span class="op">&amp;&amp;</span></span>
-<span id="cb7-162"><a href="#cb7-162"></a>         islands<span class="op">.</span><span class="fu">includes</span>(penguin<span class="op">.</span><span class="at">island</span>)<span class="op">;</span></span>
-<span id="cb7-163"><a href="#cb7-163"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="164" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 163;"><span id="cb7-164"><a href="#cb7-164"></a>filtered <span class="op">=</span> data<span class="op">.</span><span class="fu">filter</span>(<span class="kw">function</span>(penguin) {</span>
+<span id="cb7-165"><a href="#cb7-165"></a>  <span class="cf">return</span> bill_length_min <span class="op">&lt;</span> penguin<span class="op">.</span><span class="at">bill_length_mm</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb7-166"><a href="#cb7-166"></a>         islands<span class="op">.</span><span class="fu">includes</span>(penguin<span class="op">.</span><span class="at">island</span>)<span class="op">;</span></span>
+<span id="cb7-167"><a href="#cb7-167"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="declaration">
 
@@ -636,6 +640,7 @@ Jan Simson
 <li>https://quarto.org/</li>
 <li>https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/</li>
 <li>https://occasionaldivergences.com/posts/quarto-questions/</li>
+<li>https://github.com/jansim/tea-talk-quarto</li>
 </ul>
 <div class="footer footer-default">
 

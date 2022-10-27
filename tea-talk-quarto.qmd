@@ -69,6 +69,10 @@ ggplot(
 
 ![](./figures/example-penguins.png)
 
+## The Rendered Output (for ACM)
+
+![](./figures/example-penguins-acm.png)
+
 ## What can you create?
 
 ::: {.incremental}
@@ -194,4 +198,4 @@ filtered = data.filter(function(penguin) {
 - https://quarto.org/
 - https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/
 - https://occasionaldivergences.com/posts/quarto-questions/
-
+- https://github.com/jansim/tea-talk-quarto
